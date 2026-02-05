@@ -1,61 +1,204 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Name - Analytics Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favour Edet - Analytics Engineer</title>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
         }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
-        .project { margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 5px; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; opacity: 0.9; }
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .project h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project .tech {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-top: 10px;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .project a:hover {
+            background: #764ba2;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #e9ecef;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .contact a:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            .container { padding: 10px; }
+        }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p><strong>Analytics Engineer | Data Modeling | Snowflake | dbt</strong></p>
-    <p>📍 Nigeria | 🌍 Available for Remote Work</p>
-    
-    <h2>About Me</h2>
-    <p>Self-taught Analytics Engineer with experience in data modeling, pipeline development, and business intelligence. Passionate about transforming raw data into actionable insights.</p>
-    
-    <h2>Skills</h2>
-    <p>SQL • Snowflake • dbt • Python • Data Modeling • ETL/ELT</p>
-    
-    <h2>Certifications</h2>
-    <ul>
-        <li>IBM Data Analyst Professional Certificate</li>
-        <li>Snowflake Data Engineering Certificate</li>
-        <li>dbt Fundamentals (in progress)</li>
-    </ul>
-    
-    <h2>Projects</h2>
-    
-    <div class="project">
-        <h3>Foodhub Orders Analytics Pipeline</h3>
-        <p>Built end-to-end data pipeline using Snowflake and dbt to analyze food delivery patterns and customer behavior.</p>
-        <p><strong>Tech:</strong> Snowflake, dbt, SQL</p>
-        <p><a href="LINK_TO_GITHUB_REPO">View on GitHub →</a></p>
+    <div class="container">
+        <header>
+            <h1>Favour Edet</h1>
+            <p>Analytics Engineer | AI Automation | Cloud Data Platforms</p>
+            <p>📍 Nigeria | 🌍 Open to Remote Opportunities</p>
+        </header>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Self-taught Analytics Engineer specializing in building intelligent data pipelines that combine cloud data platforms with AI automation. I transform raw data into actionable insights through modern data stack technologies and AI-powered systems.</p>
+            <p style="margin-top: 15px;">Passionate about building systems that don't just report what happened—but predict what's next and act on it automatically.</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill">Snowflake</span>
+                <span class="skill">dbt</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Python</span>
+                <span class="skill">AI Agents</span>
+                <span class="skill">Data Modeling</span>
+                <span class="skill">ETL/ELT</span>
+                <span class="skill">API Integration</span>
+                <span class="skill">Git/GitHub</span>
+                <span class="skill">Slack Integration</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Featured Projects</h2>
+            
+            <div class="project">
+                <h3>🤖 Mobile Fintech AI Pipeline</h3>
+                <p>Real-time cryptocurrency analytics pipeline with AI-powered insights and Slack alerting. Built entirely on mobile using Termux, demonstrating cloud-native development without traditional infrastructure.</p>
+                <p><strong>Impact:</strong> Automated 24/7 market monitoring with intelligent alerts for trading opportunities.</p>
+                <div>
+                    <span class="tech">Python</span>
+                    <span class="tech">Snowflake</span>
+                    <span class="tech">AI Agents</span>
+                    <span class="tech">Slack API</span>
+                    <span class="tech">Termux</span>
+                </div>
+                <a href="https://github.com/FavourEdet-Data/Mobile-Fintech-Pipeline" target="_blank">View on GitHub →</a>
+            </div>
+
+            <div class="project">
+                <h3>📊 Foodhub Analytics Pipeline</h3>
+                <p>End-to-end dbt transformation pipeline for food delivery analytics with dimensional modeling and data quality testing.</p>
+                <p><strong>Impact:</strong> Enabled customer behavior analysis and operational insights through star schema design.</p>
+                <div>
+                    <span class="tech">Snowflake</span>
+                    <span class="tech">dbt</span>
+                    <span class="tech">SQL</span>
+                    <span class="tech">Data Modeling</span>
+                </div>
+                <a href="https://github.com/FavourEdet-Data/foodhub-dbt-analytics" target="_blank">View on GitHub →</a>
+            </div>
+
+            <div class="project">
+                <h3>🛍️ Olist E-commerce Data Warehouse</h3>
+                <p>Brazilian e-commerce data warehouse with dimensional modeling for business intelligence and analytics.</p>
+                <p><strong>Impact:</strong> Comprehensive data model supporting multi-dimensional analysis of e-commerce operations.</p>
+                <div>
+                    <span class="tech">Snowflake</span>
+                    <span class="tech">dbt</span>
+                    <span class="tech">SQL</span>
+                    <span class="tech">Star Schema</span>
+                </div>
+                <a href="https://github.com/FavourEdet-Data/olist-ecommerce-dbt" target="_blank">View on GitHub →</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul style="list-style-position: inside; line-height: 2;">
+                <li><strong>IBM Data Analyst Professional Certificate</strong></li>
+                <li><strong>Snowflake Data Engineering Certificate</strong></li>
+                <li><strong>dbt Fundamentals</strong> (in progress)</li>
+            </ul>
+        </div>
+
+        <div class="section contact">
+            <h2 style="margin-bottom: 30px;">Let's Connect</h2>
+            <a href="https://linkedin.com/in/favour-edet-a773b737b" target="_blank">LinkedIn</a>
+            <a href="https://github.com/FavourEdet-Data" target="_blank">GitHub</a>
+            <a href="mailto: favouranalyticsai@gmail.com">Email</a>
+        </div>
     </div>
-    
-    <div class="project">
-        <h3>Brazil E-commerce (Olist) Data Warehouse</h3>
-        <p>Designed dimensional model and transformation logic for Brazilian e-commerce marketplace data.</p>
-        <p><strong>Tech:</strong> Snowflake, dbt, SQL, Data Modeling</p>
-        <p><a href="LINK_TO_GITHUB_REPO">View on GitHub →</a></p>
-    </div>
-    
-    <h2>Contact</h2>
-    <p>
-        <a href="https://linkedin.com/in/your-profile">LinkedIn</a> | 
-        <a href="https://github.com/your-username">GitHub</a> | 
-        <a href="mailto:your.email@example.com">Email</a>
-    </p>
 </body>
-  </html>
+</html>
